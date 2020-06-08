@@ -1,0 +1,40 @@
+~$ python3
+Python 3.5.2 (default, Nov 12 2018, 13:43:14) 
+[GCC 5.4.0 20160609] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import openrazer.client
+>>> devices = openrazer.client.DeviceManager().devices
+>>> mouse = devices[0]
+>>> mouse.name
+'Razer Mamba Tournament Edition'
+>>> mouse.dpi
+(800, 800)
+>>> mouse.fx.
+Pressing Tab after a dot will list the possible functions. Ignore underscores.
+
+mouse.fx.__class__(             mouse.fx.__subclasshook__(
+mouse.fx.__delattr__(           mouse.fx.__weakref__
+mouse.fx.__dict__               mouse.fx._capabilities
+mouse.fx.__dir__(               mouse.fx._custom_lighting_dbus
+mouse.fx.__doc__                mouse.fx._dbus
+mouse.fx.__eq__(                mouse.fx._lighting_dbus
+mouse.fx.__format__(            mouse.fx.advanced
+mouse.fx.__ge__(                mouse.fx.breath_dual(
+mouse.fx.__getattribute__(      mouse.fx.breath_random(
+mouse.fx.__gt__(                mouse.fx.breath_single(
+mouse.fx.__hash__(              mouse.fx.breath_triple(
+mouse.fx.__init__(              mouse.fx.has(
+mouse.fx.__le__(                mouse.fx.misc
+mouse.fx.__lt__(                mouse.fx.none(
+mouse.fx.__module__             mouse.fx.reactive(
+mouse.fx.__ne__(                mouse.fx.ripple(
+mouse.fx.__new__(               mouse.fx.ripple_random(
+mouse.fx.__reduce__(            mouse.fx.spectrum(
+mouse.fx.__reduce_ex__(         mouse.fx.starlight_dual(
+mouse.fx.__repr__(              mouse.fx.starlight_random(
+mouse.fx.__setattr__(           mouse.fx.starlight_single(
+mouse.fx.__sizeof__(            mouse.fx.static(
+mouse.fx.__str__(               mouse.fx.wave(
+For example:
+
+>>> mouse.fx.static(0, 255, 0)     # Sets effect to static green (RGB 0,255,0)

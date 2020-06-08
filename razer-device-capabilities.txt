@@ -1,0 +1,6 @@
+python3 -c "import openrazer.client; a = openrazer.client.DeviceManager().devices[0]; print(a.name); print(a.capabilities)" | grep True
+
+# doesn't work on my naga chroma mouse
+python3 -c "import openrazer.client; a = openrazer.client.DeviceManager(); a.devices[0].fx.ripple(238, 0, 0)"
+
+
