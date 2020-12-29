@@ -21,7 +21,7 @@ for device in a.devices:
     if device.type == "keyboard":
         device.brightness = 75
         device.fx.static(238, 0, 0)
-#        device.fx.starlight_dual(238, 0, 0, 143, 0, 0, 1) # starlight speed = fast
+        device.fx.starlight_dual(238, 0, 0, 143, 0, 0, 1) # starlight speed = fast
 
     if device.type == "mousemat":
         device.brightness = 75
