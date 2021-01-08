@@ -1,0 +1,9 @@
+[Unit]
+Description=OpenRazer custom effects script
+After=default.target
+
+[Service]
+ExecStart=/home/kechung/bin/openrazer-custom-effects/run-screensaver.sh &
+
+[Install]
+WantedBy=default.target

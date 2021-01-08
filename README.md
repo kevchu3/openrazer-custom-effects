@@ -3,7 +3,7 @@
 This repository is intended to be a collection of custom scripts used by the maintainer to enhance the implementation of [OpenRazer] and [Polychromatic].
 
 ### Hardware
-I have the following Razer accessories:
+I tested with the following Razer accessories:
 * Mouse - Razer Naga Chroma (0053:1532)
 * Headset - Razer Kraken Ultimate (0527:1532)
 * Mousemat - Razer Goliathus Extended (0C02:1532)
@@ -19,7 +19,11 @@ Polychromatic
 
 ### Custom Effects
 
-I applied custom effects with this command: `python reset-razer-profile.py`
+I wrote a collection of scripts to be run from the user's systemd to apply custom effects based on screen locking status.
+
+Install: `cd scripts; ./install-screensaver.sh`
+Restart: `systemctl restart openrazer-custom-effects`
+View status: `systemctl status openrazer-custom-effects`
 
 
 [OpenRazer repository]: https://github.com/openrazer/openrazer
