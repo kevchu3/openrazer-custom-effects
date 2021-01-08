@@ -22,7 +22,9 @@ Polychromatic
 I wrote a collection of scripts to be run from the user's systemd to apply custom effects based on screen locking status.
 
 Install: `cd scripts; ./install-screensaver.sh`
+
 Restart: `systemctl restart openrazer-custom-effects`
+
 View status: `systemctl status openrazer-custom-effects`
 
 
