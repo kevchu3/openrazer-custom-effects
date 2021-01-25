@@ -2,7 +2,7 @@
 
 # this will run as UID 1000; change if using another user
 export DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/1000/bus"
-export DISPLAY=":0"
+export DISPLAY=":1"
 dbus-monitor --session "type='signal',interface='org.gnome.ScreenSaver'" | \
 ( while true
     do read X
