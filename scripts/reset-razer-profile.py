@@ -3,6 +3,10 @@ import openrazer.client
 a = openrazer.client.DeviceManager()
 a.turn_off_on_screensaver = False
 
+# Disable daemon effect syncing.
+# Without this, the daemon will try to set the lighting effect to every device.
+a.sync_effects = False
+
 for device in a.devices:
     # mouse profile
     if device.type == "mouse":
