@@ -13,6 +13,7 @@ for device in a.devices:
         device.dpi = (3800,3800)
         device.poll_rate=1000
         device.fx.breath_dual(238, 0, 0, 143, 0, 0)
+        device.fx.misc.backlight.breath_dual(238, 0, 0, 143, 0, 0)
         device.fx.misc.scroll_wheel.breath_dual(238, 0, 0, 143, 0, 0)
         device.fx.misc.scroll_wheel.brightness = 75
         device.fx.misc.logo.breath_dual(238, 0, 0, 143, 0, 0)
