@@ -8,7 +8,8 @@ a.turn_off_on_screensaver = False
 a.sync_effects = False
 
 for device in a.devices:
-    # mouse profile
+    # Naga Chroma (1532:0053)
+    # Cobra Hyperspeed (waiting for device support)
     if device.type == "mouse":
         device.dpi = (3800,3800)
         device.poll_rate=1000
@@ -19,15 +20,21 @@ for device in a.devices:
         device.fx.misc.logo.breath_single(75, 156, 211)
         device.fx.misc.logo.brightness = 75
 
-    # headset profile
+    # Kraken Ultimate (1532:0527)
     if device.type == "headset":
         device.fx.breath_dual(75, 156, 211, 122, 174, 211)
     
+    # Ornata Chroma V2 (1532:025D)
     if device.type == "keyboard":
         device.brightness = 75
         device.fx.starlight_dual(75, 156, 211, 122, 174, 211, 2) # starlight speed = normal
 
+    # Goliathus Extended (1532:0C02)
     if device.type == "mousemat":
         device.brightness = 75
         device.fx.breath_dual(75, 156, 211, 122, 174, 211)
 
+    # Base Station V2 Chroma (1532:0F20)
+    if device.type == "accessory":
+        device.brightness = 75
+        device.fx.breath_dual(75, 156, 211, 122, 174, 211)
