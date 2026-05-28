@@ -34,6 +34,7 @@ for device in a.devices:
         device.brightness = 75
         device.fx.breath_dual(238, 0, 0, 143, 0, 0)
 
+    # Mouse Dock Pro (1532:00A4)
     # Base Station V2 Chroma (1532:0F20)
     if device.type == "accessory":
         device.brightness = 75
