@@ -23,7 +23,7 @@ for device in a.devices:
     # Kraken Ultimate (1532:0527)
     if device.type == "headset":
         device.fx.breath_dual(238, 0, 0, 143, 0, 0)
-    
+
     # Ornata Chroma V2 (1532:025D)
     if device.type == "keyboard":
         device.brightness = 75
@@ -34,8 +34,12 @@ for device in a.devices:
         device.brightness = 75
         device.fx.breath_dual(238, 0, 0, 143, 0, 0)
 
-    # Mouse Dock Pro (1532:00A4)
+    # Mouse Dock Pro (1532:00A4) - always red on screensaver
+    if 'Mouse Dock Pro' in device.name:
+        device.brightness = 75
+        device.fx.static(238, 0, 0)
+
     # Base Station V2 Chroma (1532:0F20)
-    if device.type == "accessory":
+    if 'Base Station V2' in device.name:
         device.brightness = 75
         device.fx.breath_dual(238, 0, 0, 143, 0, 0)
