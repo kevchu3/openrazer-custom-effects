@@ -1,0 +1,3 @@
+# Give plugdev group access to Razer Cobra HyperSpeed hidraw devices
+# so dock-led-daemon.py can query battery/charging status
+KERNEL=="hidraw*", ATTRS{idVendor}=="1532", ATTRS{idProduct}=="00db", MODE="0660", GROUP="plugdev"
